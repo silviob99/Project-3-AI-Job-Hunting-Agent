@@ -1,57 +1,59 @@
 ![AI-Job-Agent-Banner](./assets/AI-Job-Hunter.png)
+
 # Project-3-AI-Job-Hunting-Agent
 
-An autonomous AI agent that searches for jobs daily, scores them against 
-your CV, tracks applications, and delivers results via Telegram.
+An autonomous Python pipeline that scrapes job boards daily, scores 
+listings against a target profile, and delivers ranked results via Telegram.
 
 ## Table of Contents
-- Project Overview
-- Architecture
-- Prerequisites
-- Steps
-- Roadmap
+- [Project Overview](#project-overview)
+- [Current Implementation](#current-implementation)
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Scripts](#scripts)
+- [Roadmap](#roadmap)
 
-### Project Overview
+## Project Overview
 
-Project-3: AI Job Hunting Agent is a multi-component AI pipeline built 
-on OpenClaw, Gemini 2.5 Flash, and Telegram. The agent runs daily at 20:00, 
-scrapes job boards, scores listings against a personal CV, and sends 
-a ranked digest. It tracks applications, sends follow-up reminders after 
-7 days, and sorts job-related emails in Gmail.
+A self-built job hunting automation tool that eliminates manual job searching.
+The pipeline fetches listings from Reed.co.uk, filters out senior/irrelevant 
+roles, scores matches based on keywords and location, and sends a ranked 
+digest to Telegram every day.
 
-### Architecture
+Built as a learning project to develop Python automation, API integration, 
+and scripting skills — directly applicable to security automation workflows 
+in SOC environments.
 
-| Component     | Role                        |
-|---------------|-----------------------------|
-| Gemini 2.5    | Brain — reasoning & scoring |
-| Perplexity    | Live web search             |
-| Firecrawl     | JS-protected scraping       |
-| Telegram      | Daily digest delivery       |
-| Gmail         | Email sorting               |
-| OpenClaw      | Agent orchestration         |
+## Current Implementation
 
-### Prerequisites
-- Mac with OpenClaw installed
-- Gemini API key
+| Component | Role |
+|---|---|
+| Python + BeautifulSoup | Scrapes Reed.co.uk job listings |
+| Custom scoring logic | Filters and ranks jobs by relevance |
+| Telegram Bot API | Delivers daily digest |
+| JSON storage | Stores and deduplicates results |
+
+## Prerequisites
+- Python 3.x
+- pip packages: `requests`, `beautifulsoup4`, `lxml`
 - Telegram Bot token
-- Perplexity Pro account
-- Firecrawl API key
+- Telegram Chat ID
 
-### Steps
+## Scripts
 
-- Step 0: [Prerequisites](./STEP0-Prerequisites.md)
-- Step 1: [OpenClaw Gateway Setup](./STEP1-OpenClaw-Gateway-Setup.md)
-- Step 2: [Gemini API Configuration](./STEP2-Gemini-API-Configuration.md)
-- Step 3: [Telegram Integration](./STEP3-Telegram-Integration.md)
-- Step 4: [Perplexity + Firecrawl](./STEP4-Perplexity-Firecrawl.md)
-- Step 5: [Job Scoring System](./STEP5-Job-Scoring.md)
-- Step 6: [Gmail Integration](./STEP6-Gmail.md)
-- Step 7: [VPS Deployment](./STEP7-VPS-Deployment.md)
+| Script | Description |
+|---|---|
+| `fetch_reed.py` | Scrapes Reed.co.uk for a single query |
+| `fetch_reed_multi.py` | Scrapes multiple job categories, deduplicates |
+| `filter_score_reed.py` | Scores and filters jobs by seniority/keywords |
+| `send_top_jobs_telegram.py` | Sends top results to Telegram |
 
-### Roadmap
-- [x] OpenClaw + Gemini + Telegram
-- [ ] Perplexity live search
-- [ ] Firecrawl scraping
-- [ ] CV scoring algorithm
-- [ ] Gmail sorting
-- [ ] Hetzner VPS 24/7
+## Roadmap
+- [x] Python scraping pipeline (Reed.co.uk)
+- [x] Multi-query fetching with deduplication
+- [x] Keyword scoring and seniority filtering
+- [x] Telegram delivery
+- [ ] Gemini AI scoring against CV
+- [ ] Perplexity live web search
+- [ ] Gmail sorting integration
+- [ ] Hetzner VPS 24/7 deployment
