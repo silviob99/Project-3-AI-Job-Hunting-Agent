@@ -1,4 +1,4 @@
-
+![AI-Job-Agent-Banner](./assets/AI-Job-Hunter.png)
 # Step 5 - Job Scoring System
 
 This step covers how the agent compares job listings against 
