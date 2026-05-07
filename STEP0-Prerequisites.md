@@ -39,7 +39,7 @@ accounts, tools, and credentials ready.
 
 - [ ] GitHub account
 - [ ] Google account (for Gemini + Gmail)
-- [ ] Perplexity Pro (valid until 01.2027)
+- [ ] Perplexity Pro 
 - [ ] Telegram account + personal channel
 - [ ] Firecrawl account
 
