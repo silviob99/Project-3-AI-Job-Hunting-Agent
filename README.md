@@ -1,4 +1,4 @@
-![AI-Job-Agent-Banner](./assets/banner.png)
+![AI-Job-Agent-Banner](./assets/AI Job Hunter.png)
 # Project-3-AI-Job-Hunting-Agent
 
 An autonomous AI agent that searches for jobs daily, scores them against 
