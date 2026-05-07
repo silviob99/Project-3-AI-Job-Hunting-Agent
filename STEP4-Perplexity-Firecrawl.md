@@ -26,7 +26,7 @@ Perplexity finds the jobs. Firecrawl extracts the full details.
 3. Click **"Generate API Key"**
 4. Copy and save the key
 
-> You have Perplexity Pro active until 01.2027 — API access is included.
+> I have Perplexity Pro active until 01.2027 — API access is included.
 
 ### Adding to OpenClaw
 ```yaml
