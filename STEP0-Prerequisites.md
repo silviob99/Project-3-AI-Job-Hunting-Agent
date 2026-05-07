@@ -1,4 +1,4 @@
-![AI-Job-Agent-Banner](./assets/.png)
+![AI-Job-Agent-Banner](./assets/AI Job Hunter.png)
 # Step 0 - Prerequisites
 
 Before setting up the AI Job Hunting Agent, ensure you have the following 
