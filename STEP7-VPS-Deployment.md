@@ -1,3 +1,4 @@
+![AI-Job-Agent-Banner](./assets/AI-Job-Hunter.png)
 # Step 7 - VPS Deployment
 
 This step covers moving the agent from your Mac to a Hetzner 
