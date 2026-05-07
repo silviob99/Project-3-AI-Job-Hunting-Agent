@@ -1,4 +1,4 @@
-
+![AI-Job-Agent-Banner](./assets/AI-Job-Hunter.png)
 # Step 6 - Gmail Integration
 
 This step covers connecting Gmail to the agent for automatic 
